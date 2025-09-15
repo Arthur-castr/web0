@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 body {
     margin: 0px;
-    background-color: #ebebeb;
+    background-color: #dad9d9;
+    padding-top: 60px;
 }
 
 header {
     background-color: #1B5E20;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
 }
 
 #logomarca-ufrrj {
-    width: 60%;
+    height: 60px;
 }
 
-#menu-header {
+#navbar {
     display: flex;
     align-items: center;
     list-style: none;
@@ -23,6 +33,13 @@ header {
     gap: 20%;
     width: 30%;
     padding: 0;
+}
+
+.item-navbar {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color: #333333;
+    font-size: large;
 }
 
 .item-menu-header {
@@ -44,7 +61,8 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    scroll-margin-top: 60px;
 }
 
 #h1-home {
@@ -68,26 +86,30 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    scroll-margin-top: 60px;
 
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 15px;
     padding: 10px;
     text-align: center;
     margin: 15px;
-    max-width: 150px;
+    max-width: 250px;
+    background-color: rgb(228, 227, 227);
 }
 
 .card-name {
     font-family: "Montserrat", sans-serif;
     color: #333333;
+    margin-bottom: 5%;
 }
 
 .card-info {
     font-family: "Lato", sans-serif;
     color: #333333;
+    margin: 2%;
 }
 
 #about {
@@ -99,7 +121,8 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    scroll-margin-top: 60px;
 }
 
 #h2-about {
@@ -118,10 +141,37 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 100px;
+    font-family: "Lato", sans-serif;
+    height: 30px;
 }
 
 #p-about {
     font-family: "Lato", sans-serif;
     color: #333333;
     margin: 20px;
+}
+
+.card-img {
+    max-width: 250px;
+}
+
+#github-footer {
+    align-items: center;
+}
+
+.card-button {
+    border: 1px solid #fab040;
+    background-color: #FFB74D;
+    border-radius: 5px;
+    padding: 1% 3%;
+    margin: 10px auto 0;
+    margin-top: 3%;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    color: #333333;
+    box-shadow:  5px 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 75px;
 }
