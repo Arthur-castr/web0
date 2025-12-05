@@ -9,117 +9,217 @@
 </head>
 
 <body>
+
     <header>
-        <a href="https://portal.ufrrj.br/" target="_blank"><img id="logomarca-ufrrj"
-                src="./imagens/logomarca_ufrrj_cor.png"></a>
+        <a href="https://portal.ufrrj.br/" target="_blank">
+            <img id="logomarca-ufrrj" src="imagens/logonova.png">
+        </a>
         <nav id="navbar">
-            <a href="#home" class="item-navbar">Inicio</a>
+            <a href="#home" class="item-navbar">Início</a>
             <a href="#cards" class="item-navbar">Atividades</a>
             <a href="#about" class="item-navbar">Sobre</a>
         </nav>
     </header>
+
     <main>
-        <div id="home">
-            <h1 id="h1-home">Nome do site</h1> <!-- Acho Conecta Rural um bom nome pq lembra Facilita Rural. -->
-            <h2 id="h2-home">Descubra ativdades extracurriculares ocorrendo na Rural</h2>
-            <img id="img-home" src="imagens/atividade1.png">
-            <!-- Talvez fazer uma animacao p/ ficar trocando de img. -->
+
+        <div class="carousel-css">
+
+            <div class="slides">
+
+        <!-- Radio buttons -->
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+
+        <!-- Slides com links -->
+                <div class="slide s1">
+                <a href="https://link1.com" target="_blank">
+                    <img src="imagens/projetos.jpg" alt="">
+                </a>
+                </div>
+
+                <div class="slide">
+                <a href="https://link2.com" target="_blank">
+                    <img src="imagens/laboratorio.jpg" alt="">
+                </a>
+                </div>
+
+                <div class="slide">
+                    <a href="https://link3.com" target="_blank">
+                    <img src="imagens/ufrrj1.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+    <!-- Navegação (bolinhas) -->
+            <div class="navigation">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
         </div>
-        <div id="cards">
+
+    
+        <section id="cards">
+            
+            
             <div class="card">
                 <h2 class="card-name">Atividade 1</h2>
                 <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="pages/p1.html" target="_blank">Saber mais</a>
             </div>
+
+            
             <div class="card">
                 <h2 class="card-name">Atividade 2</h2>
                 <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p2.html" target="_blank">Saber mais</a>
             </div>
+
+        
             <div class="card">
                 <h2 class="card-name">Atividade 3</h2>
                 <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p3.html" target="_blank">Saber mais</a>
             </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 4</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 5</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 6</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 7</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 8</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 9</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 10</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 11</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-            <div class="card">
-                <h2 class="card-name">Atividade 12</h2>
-                <img class="card-img" src="imagens/atividade2.png">
-                <p class="card-info">Resumo sobore a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="card-button" href="./pages/outros.html" target="_blank">Ver mais</a>
-            </div>
-        </div>
-        <div id="about">
-            <h2 id="h2-about">Sobre o Projeto</h2>
-            <p id="p-about">Esse projeto tem como objetivo blablabla</p>
-        </div>
-    </main>
-    <footer>
-        <p id="p-footer">Roda com informações bacanas</p>
-        <a id="github-footer" href="https://github.com/Arthur-castr/web0/blob/main/index.html" target="_blank"><img src="imagens/github-mark-white.png" width=20px></a>
 
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p4.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p5.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p6.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p7.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p8.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p9.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p10.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p11.html" target="_blank">Saber mais</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-name">Atividade 3</h2>
+                <img class="card-img" src="imagens/atividade2.png">
+                <p class="card-info">Resumo sobre a atividade. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="card-button" href="./pages/outros.html" target="_blank">Participar</a>
+                <a class="card-button" href="./pages/p12.html" target="_blank">Saber mais</a>
+            </div>
+
+            
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 id="h2-about">Sobre o Projeto</h2>
+            <p id="p-about">
+                O Conecta Rural é um projeto desenvolvido para facilitar o acesso da comunidade ruralina às
+                informações sobre as atividades de extensão oferecidas pela Universidade Federal Rural do Rio de Janeiro.
+                A proposta é centralizar, organizar e apresentar essas ações de maneira clara e acessível,
+                permitindo que estudantes, moradores e visitantes encontrem rapidamente cursos, oficinas,
+                eventos culturais, projetos sociais e outras iniciativas acadêmicas.
+                <br><br>
+                Este trabalho foi criado com foco em acessibilidade, simplicidade e utilidade pública,
+                reforçando o papel social da universidade e aproximando a comunidade das oportunidades de
+                aprendizagem e participação. O objetivo é democratizar o acesso às informações e fortalecer
+                os laços entre a UFRRJ e a população que a cerca.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        
+        
+        <div class="footer-inner">
+
+            <div class="footer-section links-importantes" aria-label="Links importantes">
+                <br><h4>Links importantes</h4>
+                <ul>
+                    <li><a href="https://portal.ufrrj.br/" target="_blank" rel="noopener">Portal UFRRJ</a></li>
+                    <li><a href="https://sigaa.ufrrj.br/" target="_blank" rel="noopener">SIGAA</a></li>
+                    <li><a href="https://www.ufrrj.br/contato" target="_blank" rel="noopener">Contato da Universidade</a></li>
+                    <li><a href="https://github.com/seurepositorio" target="_blank" rel="noopener">Repositório do Projeto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section creditos" aria-label="Créditos e direitos autorais">
+                <br><p class="copyright">© 2025 Conecta Rural — Todos os direitos reservados.</p>
+                <p class="uso">Este site foi desenvolvido como parte do trabalho acadêmico do curso. Uso destinado a fins informativos.</p>
+            </div>
+
+            <div class="footer-section autores" aria-label="Alunos envolvidos">
+                <br>
+                <h4>Alunos envolvidos</h4>
+                <ul>
+                    <li>Nome do Aluno 1</li>
+                    <li>Nome do Aluno 2</li>
+                    <li>Arthur Castro</li>
+                    
+                </ul>
+            </div>
+            <a id="github-footer" href="https://github.com/Arthur-castr/web0/blob/main/index.html" target="_blank">
+                <br><img src="imagens/github-mark-white.png" width="20px">
+            </a>
+
+        </div>
     </footer>
 
 </body>

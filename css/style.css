@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
 
 body {
     margin: 0px;
-    background-color: #dad9d9;
-    padding-top: 60px;
+    background-color: #ffff;
 }
 
 header {
-    background-color: #1B5E20;
+    background-color: #A5F8D3;
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
     height: 60px;
+    position: fixed; 
+    z-index: 9999;  
 }
 
 #logomarca-ufrrj {
@@ -37,57 +44,102 @@ header {
 
 .item-navbar {
     text-decoration: none;
-    font-family: "Lato", sans-serif;
-    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
     font-size: large;
 }
 
 .item-menu-header {
-    border: 1px solid  #10b19100;
+    border: 1px solid #10b19100;
     border-radius: 10px;
     padding: 8px 12px;
-    background-color: #1B5E20;
+    background-color: #A5F8D3;
     cursor: pointer;
     font-size: 20px;
-    font-family: "Lato", sans-serif;
-}
-
-#home {
-    border: 1px solid #000000;
-    border-radius: 15px;
-    margin: 5px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    scroll-margin-top: 60px;
-}
-
-#h1-home {
     font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-size: 350%;
-    margin-bottom: 0px
 }
 
-#h2-home {
-    font-family: "Lato", sans-serif;
-    color: #333333;
-    font-size: 200%;
+.carousel-css {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 65px;
 }
 
-#img-home {
-    width: 60%;
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
 }
 
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    transition: 0.6s;
+}
+
+.slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Movimentação dos slides */
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -200%;
+}
+
+/* Bolinhas de navegação */
+.navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation label {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation label:hover {
+    background: white;
+}
+
+
+/* --- SEÇÃO CARDS --- */
 #cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     scroll-margin-top: 60px;
-
 }
 
 .card {
@@ -97,21 +149,47 @@ header {
     text-align: center;
     margin: 15px;
     max-width: 250px;
-    background-color: rgb(228, 227, 227);
+    background-color: #463f4d;
+    overflow: hidden;
 }
 
 .card-name {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
+    font-family: "Playfair Display", sans-serif;
+    color:#ffff;
     margin-bottom: 5%;
 }
 
 .card-info {
-    font-family: "Lato", sans-serif;
-    color: #333333;
+    font-family: "Playfair Display", sans-serif;
+    color: #ffff;
     margin: 2%;
 }
 
+.card-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-button {
+    border: 1px solid #FFB74D;
+    background-color: #e0a03f;
+    border-radius: 5px;
+    padding: 1% 3%;
+    margin: 10px auto 0;
+    margin-top: 3%; 
+    margin-bottom: 5px; 
+    font-family: "Playfair Display", sans-serif;
+    text-decoration: none;
+    color: #3b2f2f;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px; 
+}
+
+/* --- SEÇÃO ABOUT --- */
 #about {
     border: 1px solid #000000;
     border-radius: 15px;
@@ -123,55 +201,84 @@ header {
     text-align: center;
     justify-content: center;
     scroll-margin-top: 60px;
+    background-color: #f0f0f0;
 }
 
 #h2-about {
     font-family: "Montserrat", sans-serif;
-    color: #333333;
+    color: #616365;
 }
 
 #p-about {
-    font-family: "Lato", sans-serif;
-    color: #333333;
-}
-
-footer {
-    background-color: #1B5E20;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    font-family: "Lato", sans-serif;
-    height: 30px;
-}
-
-#p-about {
-    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", sans-serif;
     color: #333333;
     margin: 20px;
 }
 
-.card-img {
-    max-width: 250px;
+/* --- FOOTER --- */
+
+footer{
+    background-color: #616365;
 }
+
+.site-footer {
+  background: #444648; 
+  background-color: #616365;
+  color: #000000;
+  padding: 24px 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.footer-section a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-section a:hover,
+.footer-section a:focus {
+  text-decoration: underline;
+}
+
+.site-footer .copyright {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 800px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
 
 #github-footer {
     align-items: center;
-}
-
-.card-button {
-    border: 1px solid #fab040;
-    background-color: #FFB74D;
-    border-radius: 5px;
-    padding: 1% 3%;
-    margin: 10px auto 0;
-    margin-top: 3%;
-    font-family: "Lato", sans-serif;
-    text-decoration: none;
-    color: #333333;
-    box-shadow:  5px 5px 15px rgba(0,0,0,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 75px;
 }
