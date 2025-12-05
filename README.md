@@ -53,6 +53,8 @@ Para visualizar este site, você não precisa de nenhuma ferramenta complexa. Si
 2.  Navegue até a pasta do projeto.
 3.  Abra o arquivo `index.html` diretamente no seu navegador de preferência (Google Chrome, Firefox, etc.).
 
+Ou acesse esse link: https://arthur-castr.github.io/web0/
+
 ## 👥 Autores e Desenvolvedores
 
 Este projeto foi idealizado e desenvolvido pela seguinte equipe:
@@ -67,4 +69,5 @@ Um agradecimento especial ao Professor **Thiago** pela orientação, feedbacks e
 
 ---
 *Projeto Acadêmico - Setembro de 2025*
+
 
