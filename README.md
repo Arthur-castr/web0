@@ -58,7 +58,7 @@ Para visualizar este site, você não precisa de nenhuma ferramenta complexa. Si
 Este projeto foi idealizado e desenvolvido pela seguinte equipe:
 
 * **Arthur Castro**
-* **Luis Araujo**
+* **Luiz Araujo**
 * **Mateus Freitas**
 
 ## Agradecimentos
@@ -67,3 +67,4 @@ Um agradecimento especial ao Professor **Thiago** pela orientação, feedbacks e
 
 ---
 *Projeto Acadêmico - Setembro de 2025*
+
