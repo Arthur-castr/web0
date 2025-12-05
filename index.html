@@ -24,36 +24,31 @@
     <main>
 
         <div class="carousel-css">
+            
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
 
             <div class="slides">
-
-        <!-- Radio buttons -->
-                <input type="radio" name="slide" id="slide1" checked>
-                <input type="radio" name="slide" id="slide2">
-                <input type="radio" name="slide" id="slide3">
-
-        <!-- Slides com links -->
                 <div class="slide s1">
-                <a href="https://link1.com" target="_blank">
-                    <img src="imagens/projetos.jpg" alt="">
-                </a>
+                    <a href="https://link1.com" target="_blank">
+                        <img src="imagens/projetos.jpg" alt="">
+                    </a>
                 </div>
 
                 <div class="slide">
-                <a href="https://link2.com" target="_blank">
-                    <img src="imagens/laboratorio.jpg" alt="">
-                </a>
+                    <a href="https://link2.com" target="_blank">
+                        <img src="imagens/laboratorio.jpg" alt="">
+                    </a>
                 </div>
 
                 <div class="slide">
                     <a href="https://link3.com" target="_blank">
-                    <img src="imagens/ufrrj1.jpg" alt="">
+                        <img src="imagens/ufrrj1.jpg" alt="">
                     </a>
                 </div>
-
             </div>
 
-    <!-- Navegação (bolinhas) -->
             <div class="navigation">
                 <label for="slide1"></label>
                 <label for="slide2"></label>
@@ -166,7 +161,6 @@
             
         </section>
 
-        <!-- ABOUT -->
         <section id="about">
             <h2 id="h2-about">Sobre o Projeto</h2>
             <p id="p-about">
@@ -191,7 +185,7 @@
         <div class="footer-inner">
 
             <div class="footer-section links-importantes" aria-label="Links importantes">
-                <br><h4>Links importantes</h4>
+                <h4>Links importantes</h4>
                 <ul>
                     <li><a href="https://portal.ufrrj.br/" target="_blank" rel="noopener">Portal UFRRJ</a></li>
                     <li><a href="https://sigaa.ufrrj.br/" target="_blank" rel="noopener">SIGAA</a></li>
@@ -201,8 +195,11 @@
             </div>
 
             <div class="footer-section creditos" aria-label="Créditos e direitos autorais">
-                <br><p class="copyright">© 2025 Conecta Rural — Todos os direitos reservados.</p>
+                <p class="copyright">© 2025 Conecta Rural — Todos os direitos reservados.</p>
                 <p class="uso">Este site foi desenvolvido como parte do trabalho acadêmico do curso. Uso destinado a fins informativos.</p>
+                <a id="github-footer" href="https://github.com/Arthur-castr/web0/blob/main/index.html" target="_blank">
+                    <img src="imagens/github-mark-white.png" width="20px">
+                </a>
             </div>
 
             <div class="footer-section autores" aria-label="Alunos envolvidos">
@@ -213,11 +210,9 @@
                     <li>Nome do Aluno 2</li>
                     <li>Arthur Castro</li>
                     
+                    
                 </ul>
             </div>
-            <a id="github-footer" href="https://github.com/Arthur-castr/web0/blob/main/index.html" target="_blank">
-                <br><img src="imagens/github-mark-white.png" width="20px">
-            </a>
 
         </div>
     </footer>

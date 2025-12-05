@@ -13,7 +13,7 @@ body {
     padding-bottom: 40px;
 }
 
-/* ---- HEADER ---- */
+
 .top-header {
     background-color: #A5F8D3;
     padding: 20px;
@@ -27,7 +27,7 @@ body {
     font-size: 2rem;
 }
 
-/* ---- CONTEÚDO PRINCIPAL ---- */
+
 .conteudo {
     max-width: 900px;
     margin: 30px auto;
@@ -70,7 +70,7 @@ body {
     text-decoration: underline;
 }
 
-/* ---- FOOTER ---- */
+
 .rodape {
     background-color: #444648;
     color: #ffffff;
